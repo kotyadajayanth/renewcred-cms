@@ -1,0 +1,44 @@
+body {
+  font-family: -apple-system, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1a1a1a;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.admin-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background: #16213e;
+  color: white;
+  padding: 20px;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 24px;
+  background: #f5f6fa;
+}
+
+@media (max-width: 700px) {
+  .admin-shell {
+    flex-direction: column;
+  }
+  .admin-sidebar {
+    width: auto;
+  }
+}
